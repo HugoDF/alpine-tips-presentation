@@ -36,7 +36,7 @@ async function readSampleFiles(samplePaths) {
 }
 
 async function injectSamples(markdown) {
-  const samplePaths = markdown.match(sampleRegex).map((sample) => sample.match(pathRegex)[0])
+  const samplePaths = (markdown.match(sampleRegex) || []).map((sample) => sample.match(pathRegex)[0])
   const samplePathToContent = await readSampleFiles(samplePaths)
 
   return markdown.replace(sampleRegex, (replaceValue) => {
@@ -44,12 +44,5 @@ async function injectSamples(markdown) {
     return getCodeSample(path, samplePathToContent)
   })
 }
-
-
-// (async () => {
-//   console.log(
-//     await injectSamples(require('fs').readFileSync('./async-await.md', 'utf-8'))
-//   )
-// })()
 
 module.exports = injectSamples
