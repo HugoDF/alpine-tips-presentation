@@ -1,0 +1,8 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+if [ "$(git status --porcelain | grep presentation)" ]
+then
+  npm run print
+  git add .
+fi

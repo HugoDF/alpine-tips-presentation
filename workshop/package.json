@@ -1,0 +1,9 @@
+{
+  "name": "md-presentation-workshop",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Workshop for hugo-md-presentation",
+  "scripts": {},
+  "author": "Hugo Di Francesco",
+  "license": "MIT"
+}
