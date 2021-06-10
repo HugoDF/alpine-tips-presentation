@@ -190,7 +190,7 @@ On component startup (`x-init`), load data from Google Book Search API & extract
 </div>
 ```
 
-[https://codepen.io/hugodf/pen/mdWGeQo](https://codepen.io/hugodf/pen/mdWGeQo?editors=1111)
+[https://codepen.io/hugodf/pen/BaWOrMX](https://codepen.io/hugodf/pen/BaWOrMX?editors=1111)
 
 Note: `fetch` returns a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) and so does `res.json()`, hence the use of `.then` to access the result of the operation.
 
