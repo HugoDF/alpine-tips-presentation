@@ -35,7 +35,7 @@ Also involved in the community devtools.
 2. Fetch data
 3. Send and handle events
 4. `x-show` vs `x-if`
-5. `x-for` anything
+<!-- 5. `x-for` anything -->
 
 <!-- 6. class vs style binding -->
 <!-- 4. Integrate with 3rd party libraries -->
@@ -144,11 +144,11 @@ Note: `null, 4` for 4-space indented output
 
 How do I load data with Alpine?
 
-Note: you don't
 
 The `fetch` API is a native way to load data in modern browsers from JavaScript.
 <!-- .element: class="fragment" -->
 
+Note: you don't
 ----
 
 I want to load & list books that match "Alpine" from Google Books API
@@ -190,7 +190,7 @@ On component startup (`x-init`), load data from Google Book Search API & extract
 </div>
 ```
 
-https://codepen.io/hugodf/pen/mdWGeQo
+[https://codepen.io/hugodf/pen/mdWGeQo](https://codepen.io/hugodf/pen/mdWGeQo?editors=1111)
 
 Note: `fetch` returns a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) and so does `res.json()`, hence the use of `.then` to access the result of the operation.
 
@@ -460,15 +460,6 @@ HTML is case-insensitive and `x-on:event-name` is a HTML attribute.
 To avoid surprises, use dash-cased or namespaced event names, eg. `hello-world` or `hello:world` instead of `helloWorld`.
 <!-- .element: class="fragment" -->
 
-
-<!-- ---
-
-## 3. Integrate with 3rd party libraries
-
-- Google Maps/Mapbox init, `$refs` + JS
-	- create markers from Alpine Data (Alpine -> 3rd party)
-	- on market click, update Alpine state (3rd part -> Alpine) -->
-
 ---
 
 ## 4. `x-show` vs `x-if`
@@ -545,13 +536,13 @@ If you're having performance issues with one, try the other.
 
 Note: Kevin in devtools perf issue https://github.com/alpine-collective/alpinejs-devtools/pull/182/files
 
----
+<!-- ---
 
 ## 5. `x-for` anything
 
 - objects
 - range
-- `key`
+- `key` -->
 
 ---
 
